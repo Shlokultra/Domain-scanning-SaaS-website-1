@@ -1,0 +1,152 @@
+/* src/assets/styles/app.css */
+
+:root {
+  --bs-primary: #0d8abc;
+  --bs-primary-rgb: 13, 138, 188;
+  --bs-dark: #1a1d20;
+  --bs-dark-rgb: 26, 29, 32;
+  --bs-black: #0f1115;
+  --bs-black-rgb: 15, 17, 21;
+  --bs-secondary: #2c3238;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--bs-black);
+  color: #e9ecef;
+  overflow-x: hidden;
+}
+
+/* Custom Overrides */
+.bg-dark {
+  background-color: var(--bs-dark) !important;
+}
+
+.bg-black {
+  background-color: var(--bs-black) !important;
+}
+
+.bg-primary {
+  background-color: var(--bs-primary) !important;
+}
+
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+
+.border-secondary {
+  border-color: var(--bs-secondary) !important;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0b7aa8;
+  border-color: #0b7aa8;
+}
+
+.btn-outline-primary {
+  color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: #fff;
+}
+
+/* Utilities */
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.transition-colors {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.transition-transform {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-bg-secondary:hover {
+  background-color: var(--bs-secondary) !important;
+}
+
+.hover-text-light:hover {
+  color: #f8f9fa !important;
+}
+
+.hover-elevate:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2) !important;
+}
+
+.hover-scale:hover {
+  transform: scale(1.03);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.max-w-700 {
+  max-width: 700px;
+}
+
+.max-w-1200 {
+  max-width: 1200px;
+}
+
+/* Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--bs-dark);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--bs-secondary);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #495057;
+}
+
+/* Forms */
+.form-control, .form-select, .input-group-text {
+  color: #e9ecef;
+}
+
+.form-control:focus, .form-select:focus {
+  background-color: var(--bs-black);
+  color: #fff;
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 0 0.25rem rgba(13, 138, 188, 0.25);
+}
+
+.form-control::placeholder {
+  color: #6c757d;
+}
+
+/* Cards & Tables */
+.card {
+  border-radius: 0.5rem;
+}
+
+.table-dark {
+  --bs-table-bg: var(--bs-dark);
+  --bs-table-striped-bg: #212529;
+}
